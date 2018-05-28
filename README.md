@@ -15,4 +15,9 @@ We released the training/evaluation code to reproduce the evaluation results in 
 
 ### Annotation Dataset
 
-We annotated a small amount of NL/snippet pairs to train the classifier, which are released [here](https://github.com/conala-anonymous/annotation_dataset)
+This dataset contains 2,563 high-quality natural language intent and source code snippet pairs in Python. The dataset is further split into 2,063 examples for training and 500 examples for testing, respectively.
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
