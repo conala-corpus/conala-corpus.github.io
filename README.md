@@ -17,7 +17,7 @@ We released the training/evaluation code to reproduce the evaluation results in 
 
 This dataset contains 2,563 high-quality natural language intent and source code snippet pairs in Python. The dataset is further split into 2,063 examples for training and 500 examples for testing, respectively.
 
-The train/test splits are stored in `json` format. An example is:
+The train/test splits are stored in `json` format. Some examples in the dataset are:
 
 ```
 {
@@ -26,15 +26,29 @@ The train/test splits are stored in `json` format. An example is:
   "rewritten_intent": "copy the content of file 'file.txt' to file 'file2.txt'", 
   "snippet": "shutil.copy('file.txt', 'file2.txt')", 
 }
+
+{
+  "intent": "How do I check if all elements in a list are the same?", 
+  "rewritten_intent": "check if all elements in list `mylist` are the same", 
+  "snippet": "len(set(mylist)) == 1", 
+  "question_id": 22240602
+}
+
+{
+  "intent": "Iterate through words of a file in Python", 
+  "rewritten_intent": "get a list of words `words` of a file 'myfile'", 
+  "snippet": "words = open('myfile').read().split()", 
+  "question_id": 7745260
+}
 ```
 
-Here is the description of each field:
+Here is the description of each field in an example:
 
 Field | Description
 ------------ | -------------
 question_id | Id of the Stack Overflow question
 intent | Natural Language intent (i.e., the title of an Stak Overflow question)
-rewritten_intent | Crowdsourced revised intents that try to refect the full meaning of the code, typically done by incorporating variable names and arguments appeared in the code
+rewritten_intent | Crowdsourced revised intents that try to refect the full meaning of the code, typically done by incorporating variable names and arguments appeared in the code into the intent. This is useful for fine-grained language-to-code tasks like code generation
 snippet | A code snippet that implements the intent
 
 The dataset is avaiable at [here](conala_annotations.zip)
