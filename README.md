@@ -1,6 +1,6 @@
 ## Introduction
 
-We propose, conala, a scalable, language-agnostic approach for mining parallel corpus of source code and natural language from Stack Overflow (SO). It consists of two components:
+We propose conala, a scalable, language-agnostic approach for mining parallel corpus of source code and natural language from Stack Overflow (SO). It consists of two components:
 
 ![Overview of conala]({{ "conala.png"}})
 
@@ -53,3 +53,5 @@ The dataset is avaiable at [here](conala_annotations.zip)
   doi = {https://doi.org/10.1145/3196398.3196408},
 }
 ```
+
+Link to paper: https://arxiv.org/pdf/1805.08949.pdf
