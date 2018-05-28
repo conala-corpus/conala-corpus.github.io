@@ -38,3 +38,18 @@ rewritten_intent | Crowdsourced revised intents that try to refect the full mean
 snippet | A code snippet that implements the intent
 
 The dataset is avaiable at [here](conala_annotations.zip)
+
+## Reference
+
+```
+@inproceedings{yin2018mining,
+  author = {Yin, Pengcheng and Deng, Bowen and Chen, Edgar and Vasilescu, Bogdan and Neubig, Graham},
+  title = {Learning to Mine Aligned Code and Natural Language Pairs from Stack Overflow},
+  booktitle = {International Conference on Mining Software Repositories},
+  series = {MSR},
+  abbrv = {MSR 2018},
+  year = {2018},
+  publisher = {ACM},
+  doi = {https://doi.org/10.1145/3196398.3196408},
+}
+```
