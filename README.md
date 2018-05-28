@@ -69,7 +69,7 @@ prob | probability given by the mining model
 
 ## Reference
 
-If you found CONALA useful in your research, please consider citing this paper:
+If you found CONALA useful in your research, please consider citing [our MSR 2018 paper](https://arxiv.org/pdf/1805.08949.pdf):
 
 ```
 @inproceedings{yin2018mining,
@@ -83,8 +83,6 @@ If you found CONALA useful in your research, please consider citing this paper:
   doi = {https://doi.org/10.1145/3196398.3196408},
 }
 ```
-
-[arXiv link to the paper](https://arxiv.org/pdf/1805.08949.pdf)
 
 ## Links:
 
