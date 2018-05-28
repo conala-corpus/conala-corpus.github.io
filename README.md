@@ -22,4 +22,17 @@ Field | Description
 question_id | Id of the Stack Overflow question
 intent | Natural Language intent (i.e., the title of an Stak Overflow question)
 rewritten_intent | Crowdsourced revised intents that try to refect the full meaning of the code, typically done by incorporating variable names and arguments appeared in the code
-Snippet | A code snippet that implements the intent
+snippet | A code snippet that implements the intent
+
+The train/test splits are stored in `json` format. An example is:
+
+```
+{
+  "question_id": 36875258,
+  "intent": "copying one file's contents to another in python", 
+  "rewritten_intent": "copy the content of file 'file.txt' to file 'file2.txt'", 
+  "snippet": "shutil.copy('file.txt', 'file2.txt')", 
+}
+```
+
+The dataset is avaiable at [here] 
