@@ -15,7 +15,10 @@ We released the training/evaluation code to reproduce the evaluation results in 
 
 ### Annotation Dataset
 
-This dataset contains 2,563 high-quality natural language intent and source code snippet pairs in Python. The dataset is further split into 2,063 examples for training and 500 examples for testing, respectively.
+This dataset contains 2,563 high-quality natural language intent and source code snippet pairs in Python. 
+We deploy our system on top-50K *how-to* Python-tagged questions, collecting 598,237 candidate intent/snippet pairs.
+We hire annotators to annotated top-ranked predictions in the candidate set, producing this annotation dataset.
+The dataset is further split into 2,063 examples for training and 500 examples for testing, respectively.
 
 The train/test splits are stored in `json` format. Some examples in the dataset are:
 
@@ -52,6 +55,17 @@ rewritten_intent | Crowdsourced revised intents that try to refect the full mean
 snippet | A code snippet that implements the intent
 
 The dataset is avaiable at [here](conala_annotations.zip)
+
+**All Mined Intent/Snippet Pairs** We also released all 598,237 candidate intent/snippet pairs mined by our system, avaiable at [here](http://i.pcyin.me/python_mine_results.zip). The file is stored in [Json lines](http://jsonlines.org/) format. A description of each field is:
+
+Field | Description
+------------ | -------------
+question_id | Id of the Stack Overflow question
+parent_answer_post_id | Id of the answer post from which the candidate snippet is extracted
+intent | The natural language intent
+snippet | The extracted code snippet
+id | Unique id for this intent/snippet pair
+prob | probability given by the mining model
 
 ## Reference
 
