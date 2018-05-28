@@ -1,11 +1,32 @@
-## Introduction
+This is **CoNaLa, a scalable, language-agnostic approach for mining parallel 
+corpora of source code and natural language from Stack Overflow**. 
 
-We propose conala, a scalable, language-agnostic approach for mining parallel corpus of source code and natural language from Stack Overflow (SO). It consists of two components:
+Such parallel data, in which natural language and source code align closely to 
+each other, is essential for data-driven applications like source code 
+retrieval given a natural language query, source code summarization in natural 
+language, and source code synthesis from natural language.
+[Stack Overflow](http://stackoverflow.com) is a great resource to mine aligned 
+pairs of natural language text and source code snippets.
 
-![Overview of conala]({{ "conala.png"}})
+But how to automatically decide whether a source code snippet in a Stack Overflow
+answer actually corresponds to the natural language intent expressed, say, in
+the question's title?
 
-* An offline training procedure that learns a classifier to detect natural language-code snippet pairs on SO using small amount of annotated data.
-* An online mining algorithm that extracts a ranked list of natural language-code snippet pairs for each SO page.
+The **key idea** behind CoNaLa is to *learn semantic correspondence features between 
+the natural language and code using neural network models for machine translation*,
+which can calculate bidirectional conditional probabilities of the code given 
+the natural language and vice-versa of the natural language given the code.
+
+Our approach has two components:
+
+![Overview of CoNaLa]({{ "conala.png"}})
+
+* An offline training procedure that learns a classifier to detect "good" pairs
+of natural language and code snippets on Stack Overflow, using only a small amount 
+of labeled data.
+* An online mining algorithm that can extract a ranked list of pairs of natural 
+language and code from a Stack Overflow page or the 
+[Stack Overflow data dump](https://archive.org/details/stackexchange).
 
 ## Source Code and Data Set
 
@@ -69,7 +90,7 @@ prob | probability given by the mining model
 
 ## Reference
 
-If you found CONALA useful in your research, please consider citing [our MSR 2018 paper](https://arxiv.org/pdf/1805.08949.pdf):
+If you found CoNaLa useful in your research, please consider citing [our MSR 2018 paper](https://arxiv.org/pdf/1805.08949.pdf):
 
 ```
 @inproceedings{yin2018mining,
