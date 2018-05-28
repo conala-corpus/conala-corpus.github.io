@@ -69,3 +69,10 @@ The dataset is avaiable at [here](conala_annotations.zip)
 ```
 
 [arXiv link to the paper](https://arxiv.org/pdf/1805.08949.pdf)
+
+## Links:
+
+* [Neulab](http://www.cs.cmu.edu/~neulab/)
+* [STRUDEL Lab](https://cmustrudel.github.io/)
+* [Our Code Generation Research](https://github.com/pcyin/NL2code)
+* Contact: [Pengcheng Yin](http://pcyin.me)
