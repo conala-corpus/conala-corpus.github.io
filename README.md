@@ -17,13 +17,6 @@ We released the training/evaluation code to reproduce the evaluation results in 
 
 This dataset contains 2,563 high-quality natural language intent and source code snippet pairs in Python. The dataset is further split into 2,063 examples for training and 500 examples for testing, respectively.
 
-Field | Description
------------- | -------------
-question_id | Id of the Stack Overflow question
-intent | Natural Language intent (i.e., the title of an Stak Overflow question)
-rewritten_intent | Crowdsourced revised intents that try to refect the full meaning of the code, typically done by incorporating variable names and arguments appeared in the code
-snippet | A code snippet that implements the intent
-
 The train/test splits are stored in `json` format. An example is:
 
 ```
@@ -34,5 +27,14 @@ The train/test splits are stored in `json` format. An example is:
   "snippet": "shutil.copy('file.txt', 'file2.txt')", 
 }
 ```
+
+Here is the description of each field:
+
+Field | Description
+------------ | -------------
+question_id | Id of the Stack Overflow question
+intent | Natural Language intent (i.e., the title of an Stak Overflow question)
+rewritten_intent | Crowdsourced revised intents that try to refect the full meaning of the code, typically done by incorporating variable names and arguments appeared in the code
+snippet | A code snippet that implements the intent
 
 The dataset is avaiable at [here](conala_annotations.zip)
