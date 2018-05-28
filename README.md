@@ -54,4 +54,4 @@ The dataset is avaiable at [here](conala_annotations.zip)
 }
 ```
 
-Link to paper: https://arxiv.org/pdf/1805.08949.pdf
+[arXiv link to the paper](https://arxiv.org/pdf/1805.08949.pdf)
