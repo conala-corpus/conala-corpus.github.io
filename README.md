@@ -80,7 +80,7 @@ Field | Description
 ------------ | -------------
 question_id | Id of the Stack Overflow question
 intent | Natural Language intent (i.e., the title of a Stack Overflow question)
-rewritten_intent | Crowdsourced revised intents that try to better reflect the full meaning of the code, typically done by incorporating variable names and function arguments that appeared in the code into the intent. This may be useful for fine-grained language-to-code tasks like code generation, so we provide it as well.
+rewritten_intent | Crowdsourced revised intents that try to better reflect the full meaning of the code, typically done by incorporating variable names and function arguments that appeared in the code into the intent. This may be useful for fine-grained language-to-code tasks like code generation
 snippet | A code snippet that implements the intent
 
 The dataset is avaiable [here](conala_annotations.zip).
