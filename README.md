@@ -1,54 +1,25 @@
-This is **CoNaLa, a scalable, language-agnostic approach for mining parallel 
-corpora of source code and natural language from Stack Overflow**. 
+Welcome to the site of CoNaLa, the Code/Natural Language Challenge! This
+challenge was designed to test systems for **generating programs from natural
+language**. For example, if the input is "sort list x in reverse order", then
+the system would be required to output `x.sort(reverse=True)` in Python.
 
-Such parallel data, in which natural language and source code align closely to 
-each other, is essential for data-driven applications like source code 
-retrieval given a natural language query, source code summarization in natural 
-language, and source code synthesis from natural language.
-[Stack Overflow](http://stackoverflow.com) is a great resource to mine aligned 
-pairs of natural language text and source code snippets.
+We have released a dataset crawled from [StackOverflow](http://stackoverflow.com),
+automatically filtered, then curated by annotators, split into 2,063 training and
+500 test examples. We also provide a large automatically-mined dataset, and links
+to other datasets that you can use in training your models.
 
-But how to automatically decide whether a source code snippet in a Stack Overflow
-answer actually corresponds to the natural language intent expressed, say, in
-the question's title?
+There is also information about how you can train a baseline system, evaluate, and
+submit your results to be posted on the leaderboard.
 
-The **key idea** behind CoNaLa, described in detail in 
-[our MSR 2018 paper](https://arxiv.org/pdf/1805.08949.pdf) and [this presentation slides](slides.pdf), 
-is to *learn semantic correspondence features between the natural language and 
-code using neural network models for machine translation*,
-which can calculate bidirectional conditional probabilities of the code given 
-the natural language and vice-versa of the natural language given the code.
+## Dataset Information
 
-Our approach has two components:
+### Manually Curated Data
 
-![Overview of CoNaLa]({{ "conala.png"}})
+Version 1 of the CoNaLa dataset contains 2,563 high-quality natural language
+intent and source code  snippet pairs in Python. 
 
-* An offline training procedure that learns a classifier to detect "good" pairs
-of natural language and code snippets on Stack Overflow, using only a small amount 
-of labeled data.
-* An online mining algorithm that can extract a ranked list of pairs of natural 
-language and code from a Stack Overflow page or the 
-[Stack Overflow data dump](https://archive.org/details/stackexchange).
-
-## Source Code and Data Set
-
-### Mining 
-
-You can find the training/evaluation code to reproduce the evaluation results in 
-our MSR paper [here](https://github.com/conala-anonymous/sominer).
-
-### Annotation Dataset
-
-This dataset contains 2,563 high-quality natural language intent and source code 
-snippet pairs in Python. 
-We deployed our system on top-50K *how-to* Python-tagged questions, collecting 
-598,237 candidate intent/snippet pairs.
-We hired annotators to annotate the top-ranked predictions in the candidate set, 
-producing this annotation dataset.
-The dataset is further split into 2,063 examples for training and 500 examples 
-for testing, respectively.
-
-The train/test splits are stored in `json` format. 
+The train/test splits are stored in `json` format, and you can see some
+examples below:
 Some examples in the dataset are:
 
 ```
@@ -83,10 +54,18 @@ intent | Natural Language intent (i.e., the title of a Stack Overflow question)
 rewritten_intent | Crowdsourced revised intents that try to better reflect the full meaning of the code, typically done by incorporating variable names and function arguments that appeared in the code into the intent. This may be useful for fine-grained language-to-code tasks like code generation
 snippet | A code snippet that implements the intent
 
-The dataset is avaiable [here](conala_annotations.zip).
+The dataset is available [here](conala_annotations.zip).
+(TODO: Add version number to the zip file)
 
-**All Mined Intent/Snippet Pairs** 
-We also release all 598,237 candidate intent/snippet pairs mined by our 
+### Other Data Sources
+
+In the CoNaLa challenge, you are allowed to use other data sources to improve
+your system accuracy **as long as you exclude any information from the specific
+StackOverflow questions that are included in the test set**. We provide links
+to a number of data sources below, but other sources may be used as well:
+
+#### Automatically Mined Intent/Snippet Pairs
+We also release 598,237 candidate intent/snippet pairs mined by our 
 system, avaiable [here](http://i.pcyin.me/python_mine_results.zip). 
 The file is stored in [Json lines](http://jsonlines.org/) format. 
 A description of each field is:
@@ -99,6 +78,49 @@ intent | The natural language intent
 snippet | The extracted code snippet
 id | Unique id for this intent/snippet pair
 prob | Probability given by the mining model
+
+#### External Datasets
+
+You may also use data from other external sources such as:
+* [Django Dataset](https://ahcweb01.naist.jp/pseudogen/)
+* [StaQC](https://github.com/LittleYUYU/StackOverflow-Question-Code-Dataset): *note* that this is mined from StackOveflow, so you must ensure that you do not use the questions included in the CoNaLa test set.
+
+## Training a Baseline System
+
+TODO: information about the baseline system pending.
+
+## Evaluation and Submitting Results
+
+TODO: information about how to evaluate systems and submit results to the leaderboard.
+
+## Mining Method
+
+The CoNaLa data was mined using a scalable, language-agnostic approach for mining parallel 
+corpora of source code and natural language from Stack Overflow. 
+
+The **key idea** behind the method, described in detail in 
+[our MSR 2018 paper](https://arxiv.org/pdf/1805.08949.pdf) and [this presentation slides](slides.pdf), 
+is to *learn semantic correspondence features between the natural language and 
+code using neural network models for machine translation*,
+which can calculate bidirectional conditional probabilities of the code given 
+the natural language and vice-versa of the natural language given the code.
+
+Our approach has two components:
+
+![Overview of CoNaLa]({{ "conala.png"}})
+
+* An offline training procedure that learns a classifier to detect "good" pairs
+of natural language and code snippets on Stack Overflow, using only a small amount 
+of labeled data.
+* An online mining algorithm that can extract a ranked list of pairs of natural 
+language and code from a Stack Overflow page or the 
+[Stack Overflow data dump](https://archive.org/details/stackexchange).
+
+TODO: More information about the curation method.
+
+You can find the training/evaluation code to reproduce the evaluation results in 
+our MSR paper [here](https://github.com/conala-anonymous/sominer).
+(TODO: change link from conala-anonymous to conala-corpus?)
 
 ## Reference
 
