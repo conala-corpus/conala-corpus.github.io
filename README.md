@@ -13,7 +13,7 @@ answer actually corresponds to the natural language intent expressed, say, in
 the question's title?
 
 The **key idea** behind CoNaLa, described in detail in 
-[our MSR 2018 paper](https://arxiv.org/pdf/1805.08949.pdf), 
+[our MSR 2018 paper](https://arxiv.org/pdf/1805.08949.pdf) and [this presentation slides](slides.pdf), 
 is to *learn semantic correspondence features between the natural language and 
 code using neural network models for machine translation*,
 which can calculate bidirectional conditional probabilities of the code given 
