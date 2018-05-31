@@ -54,8 +54,7 @@ intent | Natural Language intent (i.e., the title of a Stack Overflow question)
 rewritten_intent | Crowdsourced revised intents that try to better reflect the full meaning of the code, typically done by incorporating variable names and function arguments that appeared in the code into the intent. This may be useful for fine-grained language-to-code tasks like code generation
 snippet | A code snippet that implements the intent
 
-The dataset is available [here](conala_annotations.zip).
-(TODO: Add version number to the zip file)
+The dataset is available [here](conala_annotations.v1.0.zip).
 
 ### Other Data Sources
 
@@ -88,10 +87,12 @@ You may also use data from other external sources such as:
 ## Training a Baseline System
 
 TODO: information about the baseline system pending.
+TODO: We probabily don't need this
 
 ## Evaluation and Submitting Results
 
 TODO: information about how to evaluate systems and submit results to the leaderboard.
+Edgar: Can you help add this info
 
 ## Mining Method
 
