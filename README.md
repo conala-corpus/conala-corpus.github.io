@@ -83,7 +83,7 @@ intent | Natural Language intent (i.e., the title of a Stack Overflow question)
 rewritten_intent | Crowdsourced revised intents that try to better reflect the full meaning of the code, typically done by incorporating variable names and function arguments that appeared in the code into the intent. This may be useful for fine-grained language-to-code tasks like code generation
 snippet | A code snippet that implements the intent
 
-The dataset is avaiable [here](conala_annotations.zip).
+The dataset is avaiable [here](conala_annotations.v1.0.zip).
 
 **All Mined Intent/Snippet Pairs** 
 We also release all 598,237 candidate intent/snippet pairs mined by our 
