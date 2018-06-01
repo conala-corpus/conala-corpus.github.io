@@ -117,11 +117,16 @@ of labeled data.
 language and code from a Stack Overflow page or the 
 [Stack Overflow data dump](https://archive.org/details/stackexchange).
 
-TODO: More information about the curation method.
-
 You can find the training/evaluation code to reproduce the evaluation results in 
 our MSR paper [here](https://github.com/conala-anonymous/sominer).
-(TODO: change link from conala-anonymous to conala-corpus?)
+
+### Human-in-loop Quality Improvement
+
+![Overview of CoNaLa]({{ "iter_quality_improve.png"}})
+
+We aim to improve the performance of the mining model using iterative human feedback.
+Specifically, we ask professional programmers to annotate the top-ranked predictions given by the model.
+And use the annotated results to re-train the model. 
 
 ## Reference
 
