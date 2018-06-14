@@ -1,5 +1,5 @@
 Welcome to the site of **CMU CoNaLa, the Code/Natural Language Challenge**, a joint
-project of the Carnegie Mellon University NeuLab and STRUDEL Lab! This
+project of the Carnegie Mellon University [NeuLab](http://www.cs.cmu.edu/~neulab/) and [STRUDEL](https://cmustrudel.github.io/) Lab! This
 challenge was designed to test systems for *generating programs from natural
 language*. For example, if the input is `sort list x in reverse order`, then
 the system would be required to output `x.sort(reverse=True)` in Python.
@@ -125,7 +125,7 @@ which is in JSON array format with one line being one code snippet. An example o
 to create this file can also be found in the [conala-baseline](https://github.com/conala-corpus/conala-baseline/)
 directory.
 
-Once you have created this file, you can submit it to the [Leader Board](https://competitions.codalab.org/competitions/19175) on CodaLab.
+Once you have created this file, you can submit it to the [Leader Board](https://competitions.codalab.org/competitions/19175) on CodaLab. The results are evaluated according to BLEU score after tokenization, as detailed in the scripts in the baseline github repository.
 
 ## Organizers
 
