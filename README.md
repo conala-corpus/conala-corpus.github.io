@@ -1,3 +1,5 @@
+NOTE: The official challenge has not started yet, we will make an announcment [on twitter](http://twitter.com/gneubig]) when it officially starts.
+
 Welcome to the site of **CMU CoNaLa, the Code/Natural Language Challenge**, a joint
 project of the Carnegie Mellon University [NeuLab](http://www.cs.cmu.edu/~neulab/) and [STRUDEL](https://cmustrudel.github.io/) Lab! This
 challenge was designed to test systems for *generating programs from natural
