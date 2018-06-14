@@ -127,7 +127,12 @@ which is in JSON array format with one line being one code snippet. An example o
 to create this file can also be found in the [conala-baseline](https://github.com/conala-corpus/conala-baseline/)
 directory.
 
-Once you have created this file, you can submit it to the [Leader Board](https://competitions.codalab.org/competitions/19175) on CodaLab. The results are evaluated according to BLEU score after tokenization, as detailed in the scripts in the baseline github repository.
+Once you have created this file, you can submit it to the [Leader Board](https://competitions.codalab.org/competitions/19175) on CodaLab. The results are evaluated according to BLEU score after tokenization, as detailed in the scripts in the baseline github repository. The official results are on the leaderboard, but we'll also be maintaining a (potentially outdated) copy here for easy browsing:
+
+Date      | Team        | Name | Description   | BLEU
+--------- | ----------- | ---- | ------------- | ----
+6/14/2018 | Organizers  | seq2seq annot+mine | A baseline sequence-to-sequence model trained on both annotated and 100k mined data. | 22.36
+6/14/2018 | Organizers  | seq2seq annot      | A baseline sequence-to-sequence model trained on only annoated data. | 11.32
 
 ## Organizers
 
