@@ -4,7 +4,7 @@ challenge was designed to test systems for *generating programs from natural
 language*. For example, if the input is `sort list x in reverse order`, then
 the system would be required to output `x.sort(reverse=True)` in Python.
 
-<img class="floatright" src="conala-logo.png"/>
+<img style="float:right;" src="conala-logo.png" height="100"/>
 
 * [Dataset Information](#dataset-information)
 * [Training Systems](#training-systems)
