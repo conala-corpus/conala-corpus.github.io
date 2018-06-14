@@ -16,7 +16,8 @@ submit your results to be posted on the leaderboard.
 
 We have released a dataset crawled from [StackOverflow](http://stackoverflow.com),
 automatically filtered, then curated by annotators, split into 2,063 training and
-500 test examples. We also provide a large automatically-mined dataset with 600k
+500 test examples (read more about the process [here](mining.md).
+We also provide a large automatically-mined dataset with 600k
 examples, and links to other similar datasets. These data sets can be used for
 the CoNaLa challenge, or for any other research on the intersection of code and natural
 language.
@@ -128,43 +129,10 @@ directory.
 
 Once you have created this file, you can submit it to the [Leader Board](https://competitions.codalab.org/competitions/19175).
 
-## Mining Method
+## Organizers
 
-The CoNaLa data was mined using a scalable, language-agnostic approach for mining parallel 
-corpora of source code and natural language from Stack Overflow. 
+* Contact: [Pengcheng Yin](http://pcyin.me), [Graham Neubig](http://phontron.com)
 
-The **key idea** behind the method, described in detail in 
-[our MSR 2018 paper](https://arxiv.org/pdf/1805.08949.pdf) and [this presentation slides](slides.pdf), 
-is to *learn semantic correspondence features between the natural language and 
-code using neural network models for machine translation*,
-which can calculate bidirectional conditional probabilities of the code given 
-the natural language and vice-versa of the natural language given the code.
-
-Our approach has two components:
-
-![Overview of CoNaLa]({{ "conala.png"}})
-
-* An offline training procedure that learns a classifier to detect "good" pairs
-of natural language and code snippets on Stack Overflow, using only a small amount 
-of labeled data.
-* An online mining algorithm that can extract a ranked list of pairs of natural 
-language and code from a Stack Overflow page or the 
-[Stack Overflow data dump](https://archive.org/details/stackexchange).
-
-You can find the training/evaluation code to reproduce the evaluation results in 
-our MSR paper [here](https://github.com/conala-anonymous/sominer).
-
-### Human-in-loop Quality Improvement
-
-![Overview of CoNaLa]({{ "iter_quality_improve.png"}})
-
-We aim to improve the performance of the mining model using iterative human feedback.
-Specifically, we ask professional programmers to annotate the top-ranked predictions given by the model.
-And use the annotated results to re-train the model. 
-
-## Links:
-
-* [Neulab](http://www.cs.cmu.edu/~neulab/)
-* [STRUDEL Lab](https://cmustrudel.github.io/)
-* [Our Code Generation Research](https://github.com/pcyin/NL2code)
-* Contact: [Pengcheng Yin](http://pcyin.me)
+[![Carnegie Mellon University]({{ "cmu-logo.png"}})](http://cmu.edu)
+[![NeuLab]({{ "neulab-logo.png"}})](http://www.cs.cmu.edu/~neulab/)
+[![STRUDEL Lab]({{ "strudel-logo.png"}})](https://cmustrudel.github.io/)
