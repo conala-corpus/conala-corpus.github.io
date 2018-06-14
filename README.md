@@ -1,16 +1,13 @@
-Welcome to the site of CMU CoNaLa, the Code/Natural Language Challenge, a joint
+Welcome to the site of **CMU CoNaLa, the Code/Natural Language Challenge**, a joint
 project of the Carnegie Mellon University NeuLab and STRUDEL Lab! This
-challenge was designed to test systems for **generating programs from natural
-language**. For example, if the input is "sort list x in reverse order", then
+challenge was designed to test systems for *generating programs from natural
+language*. For example, if the input is `sort list x in reverse order`, then
 the system would be required to output `x.sort(reverse=True)` in Python.
 
-* [Dataset Information](#Dataset-Information)
-* [Training Baselines](#Training-Baselines)
-* [Submitting Results](#Submitting-Results)
+* [Dataset Information](#dataset-information)
+* [Training Systems](#training-systems)
+* [Submitting Results](#submitting-results)
 * [Leader Board](https://competitions.codalab.org/competitions/19175)
-
-There is also information about how you can train a baseline system, evaluate, and
-submit your results to be posted on the leaderboard.
 
 ## Dataset Information
 
@@ -117,22 +114,23 @@ To participate in the CoNaLa challenge, you should use the `conala-train`
 and/or `conala-mined` datasets to train a system, take the `rewritten_intent`
 field of the `conala-test` dataset as input, and generate output from it.
 More details of how to do so, along with example scripts to perform preprocessing
-and train a baseline sequence-to-sequence model can be found on the
-[conala-baseline](https://github.com/conala-corpus/conala-baseline/) web site.
+and train a baseline sequence-to-sequence model can be found on the following GitHub site:
+
+* [conala-baseline](https://github.com/conala-corpus/conala-baseline/)
 
 ## Submitting Results
 
-The results are submitted by creating a zip file containing a single file "answer.txt",
+The results are submitted by creating a zip file containing a single file `answer.txt`,
 which is in JSON array format with one line being one code snippet. An example of how
 to create this file can also be found in the [conala-baseline](https://github.com/conala-corpus/conala-baseline/)
 directory.
 
-Once you have created this file, you can submit it to the [Leader Board](https://competitions.codalab.org/competitions/19175).
+Once you have created this file, you can submit it to the [Leader Board](https://competitions.codalab.org/competitions/19175) on CodaLab.
 
 ## Organizers
 
-* Contact: [Pengcheng Yin](http://pcyin.me), [Graham Neubig](http://phontron.com)
+* Contact: [Pengcheng Yin](http://pcyin.me), [Edgar Chen](https://www.linkedin.com/in/edgar-chen-a4267bb8), [Bogdan Vasilescu](http://bvasiles.github.io) [Graham Neubig](http://phontron.com)
 
-[![Carnegie Mellon University]({{ "cmu-logo.png"}})](http://cmu.edu)
-[![NeuLab]({{ "neulab-logo.png"}})](http://www.cs.cmu.edu/~neulab/)
-[![STRUDEL Lab]({{ "strudel-logo.png"}})](https://cmustrudel.github.io/)
+<a href="http://cmu.edu"><img alt="Carnegie Mellon University" src="cmu-logo.png" height="90"></a>
+<a href="http://www.cs.cmu.edu/~neulab/"><img alt="NeuLab" src="neulab-logo.png" height="110"></a>
+<a href="https://cmustrudel.github.io/"><img alt="Strudel" src="strudel-logo.png" height="90"></a>

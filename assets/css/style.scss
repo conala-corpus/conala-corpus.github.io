@@ -1,0 +1,27 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.inner {
+  width: 720px;
+  margin: 0 auto;
+}
+
+td {
+  font-weight: 300;
+  text-align: left;
+  border: 1px solid #000000;
+  padding: 2px;
+}
+
+table {
+  margin-bottom: 10px;
+}
+
+ul li {
+  list-style-position: inside;
+  list-style: disc;
+  margin-left: 20px;
+  padding-left: 0px;
+}
