@@ -137,7 +137,7 @@ Date      | Team        | Name | Description   | BLEU
 
 ## Organizers
 
-* Contact: [Pengcheng Yin](http://pcyin.me), [Edgar Chen](https://www.linkedin.com/in/edgar-chen-a4267bb8), [Bogdan Vasilescu](http://bvasiles.github.io) [Graham Neubig](http://phontron.com)
+* Contact: [Pengcheng Yin](http://pcyin.me), [Edgar Chen](https://www.linkedin.com/in/edgar-chen-a4267bb8), [Bogdan Vasilescu](http://bvasiles.github.io), [Graham Neubig](http://phontron.com)
 
 <a href="http://cmu.edu"><img alt="Carnegie Mellon University" src="cmu-logo.png" height="90"></a>
 <a href="http://www.cs.cmu.edu/~neulab/"><img alt="NeuLab" src="neulab-logo.png" height="110"></a>
