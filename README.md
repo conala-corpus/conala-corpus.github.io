@@ -22,7 +22,7 @@ examples, and links to other similar datasets. These data sets can be used for
 the CoNaLa challenge, or for any other research on the intersection of code and natural
 language.
 
-* **Download**: [CoNaLa Corpus v1](http://www.phontron.com/download/conala-corpus-v1.1.zip)
+* **Download**: [CoNaLa Corpus v1.1](http://www.phontron.com/download/conala-corpus-v1.1.zip)
 
 We describe the data briefly below, and you can find more data in
 [our MSR 2018 paper](https://arxiv.org/pdf/1805.08949.pdf), which we'd appreciate
