@@ -132,8 +132,8 @@ Once you have created this file, you can submit it to the [Leader Board](https:/
 
 Date      | Team        | Name | Description   | BLEU
 --------- | ----------- | ---- | ------------- | ----
-6/18/2018 | Organizers  | seq2seq annot+mine | A baseline sequence-to-sequence model trained on both annotated and 100k mined data. | 14.26
-6/18/2018 | Organizers  | seq2seq annot      | A baseline sequence-to-sequence model trained on only annoated data. | 10.58
+6/18/2018 | Organizers  | [seq2seq annot+mine](https://github.com/conala-corpus/conala-baseline/) | A baseline sequence-to-sequence model trained on both annotated and 100k mined data. | 14.26
+6/18/2018 | Organizers  | [seq2seq annot](https://github.com/conala-corpus/conala-baseline/)      | A baseline sequence-to-sequence model trained on only annoated data. | 10.58
 
 ## Organizers
 
