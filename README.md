@@ -15,7 +15,7 @@ the system would be required to output `x.sort(reverse=True)` in Python.
 ## Dataset Information
 
 We have released a dataset crawled from [StackOverflow](http://stackoverflow.com),
-automatically filtered, then curated by annotators, split into 2,063 training and
+automatically filtered, then curated by annotators, split into 2,379 training and
 500 test examples (read more about the process [here](mining.md)).
 We also provide a large automatically-mined dataset with 600k
 examples, and links to other similar datasets. These data sets can be used for
