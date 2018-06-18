@@ -110,6 +110,7 @@ prob | Probability given by the mining model
 You may also use data from other external sources such as:
 * [Django Dataset](https://ahcweb01.naist.jp/pseudogen/)
 * [StaQC](https://github.com/LittleYUYU/StackOverflow-Question-Code-Dataset): *note* that this is mined from StackOveflow, so you must ensure that you do not use the questions included in the CoNaLa test set.
+* [Code Docstring Corpus](https://github.com/EdinburghNLP/code-docstring-corpus)
 
 ## Training Systems
 
