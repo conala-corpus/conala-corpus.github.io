@@ -1,5 +1,3 @@
-NOTE: The official challenge has not started yet, we will make an announcment [on twitter](http://twitter.com/gneubig]) when it officially starts.
-
 Welcome to the site of **CMU CoNaLa, the Code/Natural Language Challenge**, a joint
 project of the Carnegie Mellon University [NeuLab](http://www.cs.cmu.edu/~neulab/) and [STRUDEL](https://cmustrudel.github.io/) Lab! This
 challenge was designed to test systems for *generating programs from natural
@@ -11,6 +9,7 @@ the system would be required to output `x.sort(reverse=True)` in Python.
 * [Dataset Information](#dataset-information)
 * [Training Systems](#training-systems)
 * [Submitting Results](#submitting-results)
+* [FAQ](faq.md)
 * [Leader Board](https://competitions.codalab.org/competitions/19175)
 
 ## Dataset Information
@@ -23,7 +22,7 @@ examples, and links to other similar datasets. These data sets can be used for
 the CoNaLa challenge, or for any other research on the intersection of code and natural
 language.
 
-* **Download**: [CoNaLa Corpus v1](http://www.phontron.com/download/conala-corpus-v1.0.zip)
+* **Download**: [CoNaLa Corpus v1](http://www.phontron.com/download/conala-corpus-v1.1.zip)
 
 We describe the data briefly below, and you can find more data in
 [our MSR 2018 paper](https://arxiv.org/pdf/1805.08949.pdf), which we'd appreciate
@@ -133,8 +132,8 @@ Once you have created this file, you can submit it to the [Leader Board](https:/
 
 Date      | Team        | Name | Description   | BLEU
 --------- | ----------- | ---- | ------------- | ----
-6/14/2018 | Organizers  | seq2seq annot+mine | A baseline sequence-to-sequence model trained on both annotated and 100k mined data. | 22.36
-6/14/2018 | Organizers  | seq2seq annot      | A baseline sequence-to-sequence model trained on only annoated data. | 11.32
+6/18/2018 | Organizers  | seq2seq annot+mine | A baseline sequence-to-sequence model trained on both annotated and 100k mined data. | 14.26
+6/18/2018 | Organizers  | seq2seq annot      | A baseline sequence-to-sequence model trained on only annoated data. | 10.58
 
 ## Organizers
 
