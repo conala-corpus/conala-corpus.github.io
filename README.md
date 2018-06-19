@@ -1,6 +1,6 @@
 Welcome to the site of **CMU CoNaLa, the Code/Natural Language Challenge**, a joint
 project of the Carnegie Mellon University [NeuLab](http://www.cs.cmu.edu/~neulab/) and [STRUDEL](https://cmustrudel.github.io/) Lab! This
-challenge was designed to test systems for *generating programs from natural
+challenge was designed to test systems for *generating program snippets from natural
 language*. For example, if the input is `sort list x in reverse order`, then
 the system would be required to output `x.sort(reverse=True)` in Python.
 
@@ -14,7 +14,7 @@ the system would be required to output `x.sort(reverse=True)` in Python.
 
 ## Dataset Information
 
-We have released a dataset crawled from [StackOverflow](http://stackoverflow.com),
+We have released a dataset crawled from [Stack Overflow](http://stackoverflow.com),
 automatically filtered, then curated by annotators, split into 2,379 training and
 500 test examples (read more about the process [here](mining.md)).
 We also provide a large automatically-mined dataset with 600k
@@ -87,7 +87,7 @@ snippet | A code snippet that implements the intent. This is the output of syste
 
 In the CoNaLa challenge, you are allowed to use other data sources to improve
 your system accuracy **as long as you exclude any information from the specific
-StackOverflow questions that are included in the test set**. We provide links
+Stack Overflow questions that are included in the test set**. We provide links
 to a number of data sources below, but other sources may be used as well:
 
 #### Automatically Mined Intent/Snippet Pairs
