@@ -143,3 +143,9 @@ Date      | Team        | Name | Description   | BLEU
 <a href="http://cmu.edu"><img alt="Carnegie Mellon University" src="cmu-logo.png" height="90"></a>
 <a href="http://www.cs.cmu.edu/~neulab/"><img alt="NeuLab" src="neulab-logo.png" height="110"></a>
 <a href="https://cmustrudel.github.io/"><img alt="Strudel" src="strudel-logo.png" height="90"></a>
+
+## Acknowledgement
+
+<img style="float:right;" src="nsf.png" height="200"/>
+
+This development and maintenance of the CoNaLa corpus is supported in part by the National Science Foundation under Grant No. 1815287, "Open-domain, Data-driven Code Synthesis from Natural Language". Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
